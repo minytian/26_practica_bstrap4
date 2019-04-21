@@ -5,8 +5,6 @@
 /.git/
 
 /app/css/
-
-/psd/
 /**/_backstage
 
 /**/package-lock.json
