@@ -10,7 +10,8 @@ body
 	line-height: 1.65
 	font-family: "crimsonText", sans-serif
 	overflow-x: hidden
-	color: 
+	color: #3e3d3d
+	max-width: 1600px
 
 
 .img-responsive
@@ -26,15 +27,39 @@ body
 b, strong
 	font-weight: bold
 
+.nav-logo__brand
+	p
+		font-family: "Montserrat", sans-serif
+		color: #757575
+		font-size: 18px
+		font-weight: 400
+		letter-spacing: .15em
+		display: inline-block
+		vertical-align: sub
+
+
 .navbar-nav
 	font-family: "Montserrat", sans-serif
 	font-weight: 400
-	color: #aaaaaa
+	color: #aaaaaa !important
 	font-size: 12px
 
 .nav-link
+	color: #aaaaaa !important
 	&:hover
-		color: #fff
+		color: #3e3d3d !important
+
+.nav-social__web
+	overflow: hidden
+	padding: 5px
+	img
+		border-right: 2px solid #aaaaaa
+		padding-right: 5px
+
+.web_last
+	img
+		border-right: none
+
 
 
 @import "media" // Always at the end
