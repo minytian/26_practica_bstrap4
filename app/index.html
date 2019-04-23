@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title>OptimizedHTML 4</title>
+	<title>Atlantida</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +19,7 @@
 </head>
 
 <body>
-
+	<!-- Меню верхнее -->
 	<header>
 		<nav class="navbar navbar-expand-lg container justify-content-around navbar-light" >
 				<div>
@@ -32,7 +32,7 @@
 				<span class="navbar-toggler-icon"></span>
 				</button>
 				<div id="navbarToggler" class="justify-content-center collapse navbar-collapse" >
-					<ul class="navbar-nav ">
+					<ul class="navbar-nav nav-pills nav-fill">
 					<li class="nav-item"><a href="#" class="nav-link text-uppercase">Home</a></li>
 					<li class="nav-item"><a href="#" class="nav-link text-uppercase">about</a></li>
 					<li class="nav-item"><a href="#" class="nav-link text-uppercase">service</a></li>
@@ -51,6 +51,37 @@
 					</div>
 		</nav>
 	</header>
+
+<!-- Слайдер вверху -->
+
+	<main>
+		<div id="carousel" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="img/slider1.jpg" alt="" class="d-block w-100">
+					<div class="carousel-caption d-none d-md-block">
+						<p>Design Studio and Digital Agency</p>
+						<span class="wave" style="background-image: url(img/wave-line.svg);"></span>
+						<h5>WE ARE ATLANTIDA</h5>
+						<span class="wave" style="background-image: url(img/wave-line.svg);"></span>
+					</div>
+					<button type="button" class="btn btn-slider d-none d-md-block">
+						Get Started
+						<img src="img/arrow.png" alt="">
+					</button>
+
+				</div>
+				<a href="#carousel" class="carousel-control-prev" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="carousel-control-bg"></span>
+				</a>
+				<a href="#carousel" class="carousel-control-next" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="carousel-control-bg"></span>
+				</a>
+			</div>
+		</div>
+	</main>
 
 	<script src="js/scripts.min.js"></script>
 	<script src="libs/bootstrap/bootstrap.min.js"></script>
