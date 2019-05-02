@@ -1,7 +1,8 @@
 .container-history
 	background-color: #ededed
+	padding-bottom: 80px
 	&-text
-		padding: 50px 0 75px 
+		padding: 50px 0 40px 
 		width: 90%
 		h2
 			font-size: 20px
@@ -12,9 +13,91 @@
 		p
 			font-size: 14px
 			line-height: 25px
-			margin-bottom: 50px
 			letter-spacing: .05em
 			padding-top: 35px
+			margin: 0
+
+.timeline-item
+	padding: $gutter/2 0
+	position: relative
+
+	&::before
+		content: "●"
+		position: absolute
+		width: 2px
+		height: 100%
+		background-color: #3e3d3d
+		font-size: 27px
+		line-height: 170%
+		text-indent: -6.5px
+
+	&:nth-child(odd)
+		text-align: left
+		padding-left: 40px
+		.timeline-item
+		&::before
+			right: 0
+
+	&:nth-child(even)
+		text-align: left
+		+make-col-offset(6)
+		padding-left: 20px
+		.timeline-item
+		&::before
+			left: -2px
+
+.timeline-item-border
+	height: 250px
+	width: 500px
+	position: relative
+	box-sizing: border-box
+	background-repeat: no-repeat
+	overflow: hidden
+	
+.timeline-item-border-large
+	height: 350px
+	width: 500px
+	position: relative
+	box-sizing: border-box
+	background-repeat: no-repeat
+	overflow: hidden
+	h3
+		font-size: 13px
+		margin: 0	
+		letter-spacing: .05em
+		font-weight: 700
+		font-family: monsterrat, sans-serif
+		color: #fff
+	span
+		font-family: monsterrat, sans-serif
+		color: #fff
+		font-size: 11px
+	p
+		font-size: 14px
+		line-height: 1.5
+		letter-spacing: .05em
+		padding-top: 20px
+		color: #fff
+		margin: 0
+
+
+.timeline-item-text
+	box-sizing: border-box
+	position: absolute
+	padding: 25px 35px 0 25px
+	h3
+		font-size: 13px
+		margin: 0	
+		letter-spacing: .05em
+		font-weight: 700
+		font-family: monsterrat, sans-serif
+	span
+		font-family: monsterrat, sans-serif
+		font-size: 11px
+	p
+		font-size: 14px
+		line-height: 1.5
+		letter-spacing: .05em
+		padding-top: 20px
+		margin: 0
  
-		 
-		 
