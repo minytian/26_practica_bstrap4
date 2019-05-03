@@ -17,64 +17,68 @@
 			padding-top: 35px
 			margin: 0
 
-.timeline-item
+.timeline
 	position: relative
+
+
+// .timeline-item
+// 	position: relative
 	
-	&::before
-		content: "●"
-		position: absolute
-		width: 2px
-		height: 100%
-		background-color: #3e3d3d
-		font-size: 27px
-		line-height: 170%
-		text-indent: -6.5px
+// 	&::before
+// 		content: "●"
+// 		position: absolute
+// 		width: 2px
+// 		height: 100%
+// 		background-color: #3e3d3d
+// 		font-size: 27px
+// 		line-height: 170%
+// 		text-indent: -6.5px
 
-	&:nth-child(2), &:nth-child(4), &:nth-child(7)
-		text-align: left
-		padding-left: 40px
-		.timeline-item
-		&::before
-			right: 0
+// 	&:nth-child(2), &:nth-child(4), &:nth-child(7)
+// 		text-align: left
+// 		padding-left: 40px
+// 		.timeline-item
+// 		&::before
+// 			right: 0
 
-	&:nth-child(3), &:nth-child(5), &:nth-child(8)
-		text-align: left
-		+make-col-offset(6)
-		padding-left: 20px
-		.timeline-item
-		&::before
-			left: -2px
-		//	top: -220px
-		.timeline-item-text
-			padding: 25px 20px 0 55px
-		// .timeline-item-border
-		// 	top: -220px
-		// .timeline-item-border-large
-		// 	top: -220px
+// 	&:nth-child(3), &:nth-child(5), &:nth-child(8)
+// 		text-align: left
+// 		+make-col-offset(6)
+// 		padding-left: 20px
+// 		.timeline-item
+// 		&::before
+// 			left: -2px
+// 		//	top: -220px
+// 		.timeline-item-text
+// 			padding: 25px 20px 0 55px
+// 		// .timeline-item-border
+// 		// 	top: -220px
+// 		// .timeline-item-border-large
+// 		// 	top: -220px
 
 
-.timeline-history-years
-	border: 2px solid #3e3d3d
-	border-radius: 50%
-	width: 75px
-	height: 75px
-	position: relative
-	left: 46.6%
-	right: 50%
-	background-color: #ededed
+// .timeline-history-years
+// 	border: 2px solid #3e3d3d
+// 	border-radius: 50%
+// 	width: 75px
+// 	height: 75px
+// 	position: relative
+// 	left: 46.6%
+// 	right: 50%
+// 	background-color: #ededed
 
-.history-idea
-	background-repeat: no-repeat
-	background-color: #3e3d3d
-	border-radius: 50%
-	width: 75px
-	height: 75px
-	position: relative
-	left: 46.6%
-	right: 50%
-	img
-		width: 37%
-		height: 37%
+// .history-idea
+// 	background-repeat: no-repeat
+// 	background-color: #3e3d3d
+// 	border-radius: 50%
+// 	width: 75px
+// 	height: 75px
+// 	position: relative
+// 	left: 46.6%
+// 	right: 50%
+// 	img
+// 		width: 37%
+// 		height: 37%
 
 .timeline-item-border
 	height: 290px
@@ -84,37 +88,37 @@
 	background-repeat: no-repeat
 	overflow: hidden
 
-.timeline-item-border-second
-	height: 220px
+// .timeline-item-border-second
+// 	height: 220px
 
-.timeline-item-border-six
-	height: 230px
+// .timeline-item-border-six
+// 	height: 230px
 	
-.timeline-item-border-large
-	height: 380px
-	width: 500px
-	position: relative
-	box-sizing: border-box
-	background-repeat: no-repeat
-	overflow: hidden
-	h3
-		font-size: 13px
-		margin: 0	
-		letter-spacing: .05em
-		font-weight: 700
-		font-family: monsterrat, sans-serif
-		color: #fff
-	span
-		font-family: monsterrat, sans-serif
-		color: #fff
-		font-size: 11px
-	p
-		font-size: 14px
-		line-height: 1.5
-		letter-spacing: .05em
-		padding-top: 20px
-		color: #fff
-		margin: 0
+// .timeline-item-border-large
+// 	height: 380px
+// 	width: 500px
+// 	position: relative
+// 	box-sizing: border-box
+// 	background-repeat: no-repeat
+// 	overflow: hidden
+// 	h3
+// 		font-size: 13px
+// 		margin: 0	
+// 		letter-spacing: .05em
+// 		font-weight: 700
+// 		font-family: monsterrat, sans-serif
+// 		color: #fff
+// 	span
+// 		font-family: monsterrat, sans-serif
+// 		color: #fff
+// 		font-size: 11px
+// 	p
+// 		font-size: 14px
+// 		line-height: 1.5
+// 		letter-spacing: .05em
+// 		padding-top: 20px
+// 		color: #fff
+// 		margin: 0
 
 
 .timeline-item-text
@@ -136,4 +140,10 @@
 		letter-spacing: .05em
 		padding-top: 20px
 		margin: 0
- 
+
+.timeline-chronology
+	border-right: 2px solid #3e3d3d
+	height: 1000px
+	width: 2px
+	position: absolute
+	
