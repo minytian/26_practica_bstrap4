@@ -20,9 +20,13 @@
 .timeline
 	position: relative
 
-
+.timeline-left
+	width: 45%
 // .timeline-item
 // 	position: relative
+
+.timeline-right
+	margin-top: 50px
 	
 // 	&::before
 // 		content: "●"
@@ -88,19 +92,19 @@
 	background-repeat: no-repeat
 	overflow: hidden
 
-// .timeline-item-border-second
-// 	height: 220px
+.timeline-item-border-right-first
+	height: 210px
 
-// .timeline-item-border-six
-// 	height: 230px
+.timeline-item-border-right-third
+	height: 210px
 	
-// .timeline-item-border-large
-// 	height: 380px
-// 	width: 500px
-// 	position: relative
-// 	box-sizing: border-box
-// 	background-repeat: no-repeat
-// 	overflow: hidden
+.timeline-item-border-large
+	height: 380px
+	width: 500px
+	position: relative
+	box-sizing: border-box
+	background-repeat: no-repeat
+	overflow: hidden
 // 	h3
 // 		font-size: 13px
 // 		margin: 0	
@@ -142,8 +146,22 @@
 		margin: 0
 
 .timeline-chronology
-	border-right: 2px solid #3e3d3d
+	border-right: 2px solid transparent
 	height: 1000px
-	width: 2px
-	position: absolute
+	width: 60px
+	margin-right: 1px
+
+
+	&::before
+		content: "●"
+		position: absolute
+		width: 2px
+		height: 100%
+		background-color: #3e3d3d
+		font-size: 27px
+		line-height: 170%
+		text-indent: -6.5px
+		left: 50%
+		right: 40%
 	
+
